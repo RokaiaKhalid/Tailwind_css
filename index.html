@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <script src="tailwind.js"></script> -->
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da375f',
+            }
+          }
+        }
+      }
+    </script> -->
+    <title>Tailwind CSS Project</title>
+  </head>
+  <body>
+    <nav class="container mx-auto relative z-50 shadow-xl" id="header">
+      <div class="flex items-center justify-between  h-20 p-6 md:p-4">
+        <div>
+          <img src="dist/imgs/tailwindcss.png" alt="Tailwind Logo" class="w-32 md:w-52">
+        </div>
+        <div class="hidden lg:flex items-center space-x-6 font-bold text-lg">
+          <a href="#" class="text-slate-900 hover:text-slate-300 transition duration-500">Home</a>
+          <a href="#" class="text-slate-900 hover:text-slate-300 transition duration-500">About</a>
+          <a href="#" class="text-slate-900 hover:text-slate-300 transition duration-500">Contact</a>
+          <a href="#" class="text-slate-900 hover:text-slate-300 transition duration-500">Social</a>
+          <a href="#" class="bg-blue-300 hover:bg-blue-200 p-3 rounded-full text-white transition duration-500">Call Me</a>
+        </div>
+        <button id="menu-btn" class="lg:hidden"><i class="ri-menu-3-line text-3xl"></i></button>
+      </div>
+      <div id="menu" class="lg:hidden z-10 w-[110%] relative -left-4">
+        <div  class=" bg-white flex flex-col items-center font-bold py-8 left-6 right-6">
+          <a href="#" class="block text-slate-900 w-2/3 text-center py-4 px-8 hover:text-slate-300 transition duration-500 hover:border-b border-slate-300">Home</a>
+          <a href="#" class="block text-slate-900 w-2/3 text-center py-4 px-8 hover:text-slate-300 transition duration-500 hover:border-b border-slate-300">About</a>
+          <a href="#" class="block text-slate-900 w-2/3 text-center py-4 px-8 hover:text-slate-300 transition duration-500 hover:border-b border-slate-300">Contact</a>
+          <a href="#" class="block text-slate-900 w-2/3 text-center py-4 px-8 hover:text-slate-300 transition duration-500 hover:border-b border-slate-300">Social</a>
+          <a href="#" class="bg-blue-300 hover:bg-blue-200 py-3 px-6 rounded-full text-white mt-2">Call Me</a>
+        </div>
+      </div>
+    </nav>
+    <section id="landing" class="h-screen  bg-gray-200">
+      <div class="container mx-auto h-full flex flex-col-reverse justify-center items-center gap-6 md:flex-row">
+        <div class="flex justify-center items-center flex-col gap-6 p-6 w-lg">
+          <h1 class="font-bold text-3xl tracking-wide text-center md:text-start lg:text-5xl">Lorem Ipsum Dolor Consectetur Adipisicing.</h1>
+          <p class="text-slate-700 text-center md:text-start lg:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, at nemo vero cupiditate quas omnis dolore tempore. Enim, laborum harum.</p>
+          <button class="w-28 bg-blue-300 rounded-full text-white self-center transition duration-500 md:self-start hover:bg-blue-200 p-3">Get Started</button>
+        </div>
+        <div class="pb-8 rounded-full overflow-hidden">
+          <img src="./dist/imgs/landing.png" alt="Landing Image" width="100%" class="object-cover mix-blend-multiply">
+        </div>
+      </div>
+    </section>
+    <section id="author h-screen">
+      <div class="container mx-auto px-6 py-16 h-full">
+        <div class="text-center w-3/4 mx-auto pb-6">
+          <h2 class="font-bold text-2xl drop-shadow-lg md:text-4xl">"Best practices" don't actually works.</h2>
+          <p class="pt-4 text-slate-600 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque veniam perspiciatis quis cupiditate voluptate quisquam atque repellendus beatae optio architecto non ex molestiae, praesentium repudiandae minus rem. Asperiores alias, odit at ducimus necessitatibus eos. </p>
+        </div>
+        <div class="boxes flex flex-col md:flex-row gap-4">
+          <div class="box flex flex-col items-center relative rounded-2xl bg-green-100 mt-16 p-4 border border-gray-400 border-solid text-center hover:-translate-y-6 hover:shadow-lg hover:shadow-slate-600 transitoin duration-500 transition-all">
+            <div class="image w-24 rounded-full absolute -top-14 shadow-[0_2px_8px_5px_rgba(0,0,0,.3)] bg-white pt-1 overflow-hidden">
+              <img src="./dist/imgs/user-01.png" alt="user image" >
+            </div>
+            <div class="info my-10">
+              <h3 class="font-bold text-lg">Fady Galal</h3>
+              <p class="text-base text-slate-600 mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed quibusdam iure dolores facere nam eligendi amet tempore neque voluptatem vel. Velit vitae facilis ratione molestiae?</p>
+            </div>
+          </div>
+          <div class="box flex flex-col items-center relative rounded-2xl bg-green-100 mt-16 p-4 border border-gray-400 border-solid text-center hover:-translate-y-6 hover:shadow-lg hover:shadow-slate-600 transitoin duration-500 transition-all">
+            <div class="image w-24 rounded-full absolute -top-14 shadow-[0_2px_8px_5px_rgba(0,0,0,.3)] bg-white pt-1 overflow-hidden">
+              <img src="./dist/imgs/user-02.png" alt="" class="overflow-auto">
+            </div>
+            <div class="info my-10">
+              <h3 class="font-bold text-xl">Hassen yousef</h3>
+              <p class="text-base text-slate-600 mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed quibusdam iure dolores facere nam eligendi amet tempore neque voluptatem vel. Velit vitae facilis ratione molestiae?</p>
+            </div>
+            </div>
+          <div class="box flex flex-col items-center relative rounded-2xl bg-green-100 mt-16 p-4 border border-gray-400 border-solid text-center hover:-translate-y-6 hover:shadow-lg hover:shadow-slate-600 transitoin duration-500 transition-all">
+            <div class="image w-24 rounded-full absolute -top-14 shadow-[0_2px_8px_5px_rgba(0,0,0,.3)] bg-white pt-1 overflow-hidden">
+              <img src="./dist/imgs/user-03.png" alt="">
+            </div>
+            <div class="info my-10">
+              <h3 class="font-bold text-lg">Farieda Mahmoud</h3>
+              <p class="text-base text-slate-600 mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed quibusdam iure dolores facere nam eligendi amet tempore neque voluptatem vel. Velit vitae facilis ratione molestiae?</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-slate-900">
+      <div class="container mx-auto flex flex-col-reverse items-center justify-between gap-6 text-white px-5 py-10 md:flex-row md:gap-0">
+        <div class="flex flex-col gap-8 space-y-12 md:space-y-2 md:items-start">
+          <div>
+            Copyright &copy; <span class="year text-blue-300 font-bold"></span>, All Rights Reserved
+          </div>
+          <div>
+            <img src="./dist/imgs/logo-dark.png" alt="logo" class="h-8">
+          </div>
+          <div class="flex justify-center items-center gap-2 mx-auto">
+            <a href="#"><i class="ri-facebook-box-fill text-3xl"></i></a>
+            <a href="#"><i class="ri-instagram-fill text-3xl"></i></a>
+            <a href="#"><i class="ri-youtube-fill text-3xl"></i></a>
+            <a href="#"><i class="ri-linkedin-fill text-3xl"></i></a>
+            <a href="#"><i class="ri-twitter-fill text-3xl"></i></a>
+          </div>
+        </div>
+        <div class="flex justify-around space-x-32">
+          <div class="flex flex-col space-y-2">
+            <a href="#" class="hover:text-slate-300">Home</a>
+            <a href="#" class="hover:text-slate-300">About</a>
+            <a href="#" class="hover:text-slate-300">Contact</a>
+          </div>
+          <div class="flex flex-col space-y-2">
+            <a href="#" class="hover:text-slate-300">Imprint</a>
+            <a href="#" class="hover:text-slate-300">Privacy</a>
+            <a href="#" class="hover:text-slate-300">Credits</a>
+          </div>
+        </div>
+        
+        <div class="flex flex-col justify-between items-center gap-[3rem]">
+          <form action="#" class="flex items-center gap-4 p-4">
+            <input type="text" placeholder="Subscribe to Newsletter" class="flex-1 rounded-full py-2 px-6">
+            <input type="submit" value="Go" class="bg-orange-700 hover:bg-slate-500 rounded-full px-4 py-2">
+          </form>
+          <div class="hidden md:block">
+            Copyright &copy; <span class="year text-blue-300 font-bold"></span>, All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./dist/js/script.js"></script>
+  </body>
+</html>
